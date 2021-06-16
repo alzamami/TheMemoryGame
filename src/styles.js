@@ -21,8 +21,15 @@ export const SubheadingStyled = styled.p`
 `;
 
 export const CardStyled = styled.div`
-  width: 125px;
-  height: 175px;
+  width: 150px;
+  height: 200px;
   background-color: #264653;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+export const CardStyled1 = styled.div`
+  width: 150px;
+  height: 200px;
+  background-color: black;
   border-radius: 10px;
 `;

@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.frontCard {
+  width: 150px;
+  height: 200px;
+  background-color: #264653;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.backCard {
+  width: 150px;
+  height: 200px;
+  background-color: #f11653;
+  border-radius: 10px;
+  cursor: pointer;
+}
