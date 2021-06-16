@@ -1,5 +1,10 @@
 import "./App.css";
-import { HeaderStyled, SubheadingStyled } from "./styles";
+import {
+  BodyStyled,
+  CardStyled,
+  HeaderStyled,
+  SubheadingStyled,
+} from "./styles";
 
 function App() {
   return (
@@ -8,6 +13,20 @@ function App() {
       <SubheadingStyled>
         This is a game to test your ability of Memorizing
       </SubheadingStyled>
+      <BodyStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+        <CardStyled></CardStyled>
+      </BodyStyled>
     </div>
   );
 }
