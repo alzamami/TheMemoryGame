@@ -65,3 +65,25 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px #264653 solid;
+  color: #264653;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover {
+  background-color: #264653;
+  border-radius: 5px;
+  border: 2px #264653 solid;
+  color: white;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}

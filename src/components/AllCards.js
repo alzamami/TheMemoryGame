@@ -2,14 +2,26 @@ import { BodyStyled } from "../styles";
 import CardFlip from "./CardFlip";
 import { useState } from "react";
 import cards from "../cards";
+
 cards.sort(() => Math.random() - 0.5);
-let cardsShuffled = cards;
+
 const AllCards = () => {
   const [firstCard, setFirstCard] = useState(null);
   const [numberLeft, setNumberLeft] = useState(14);
   const [failedAttempts, setFailedAttempts] = useState(0);
   const [successfulAttempts, setSuccessfulAttempts] = useState(0);
+  const [cardsState, setCardsState] = useState(cards);
 
+  const resetButton = (card) => {
+    setNumberLeft(14);
+    setFailedAttempts(0);
+    setSuccessfulAttempts(0);
+    setFirstCard(null);
+
+    cardsState.forEach((card) => (card.flipped = false));
+
+    setCardsState(cards.sort(() => Math.random() - 0.5));
+  };
   const mathcedCheck = (card) => {
     if (firstCard !== null) {
       if (firstCard.cardType === card.cardType) {
@@ -40,8 +52,11 @@ const AllCards = () => {
           <h3>Successful Attempts: {successfulAttempts}</h3>
         </div>
       </div>
+      <button className="button" onClick={resetButton}>
+        Reset Button
+      </button>
       <BodyStyled>
-        {cardsShuffled.map((card) => (
+        {cardsState.map((card) => (
           <CardFlip
             card={card}
             mathcedCheck={mathcedCheck}

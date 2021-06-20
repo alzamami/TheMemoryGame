@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { DivStyled, ImgStyled } from "../styles";
+import { ImgStyled } from "../styles";
+import Coded from "../Pictures/backCard.png";
 
 const CardFlip = (props) => {
   const [isFlipped, setFlipped] = useState(props.card.flipped);
@@ -13,8 +14,8 @@ const CardFlip = (props) => {
   };
 
   return (
-    <ReactCardFlip isFlipped={props.card.flipped} flipDirection="horizontal">
-      <DivStyled className="frontCard" onClick={toggle}></DivStyled>
+    <ReactCardFlip isFlipped={props.card.flipped}>
+      <img src={Coded} className="frontCard" onClick={toggle}></img>
       <ImgStyled src={props.card.backImage} />
     </ReactCardFlip>
   );

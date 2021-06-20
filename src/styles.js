@@ -4,13 +4,12 @@ export const BodyStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-gap: 5px;
-  margin: 25px;
+  margin: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: center;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-top: 75px;
+  border: 2px solid #264653;
+  border-radius: 10px;
 `;
 export const HeaderStyled = styled.h1`
   font-size: 40px;
@@ -47,7 +46,6 @@ export const DivStyled = styled.div`
 `;
 
 export const ImgStyled = styled.img`
-  display: flex;
   width: 125px;
   height: 175px;
 `;
