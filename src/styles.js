@@ -10,6 +10,7 @@ export const BodyStyled = styled.div`
   justify-content: center;
   border: 2px solid black;
   border-radius: 15px;
+  margin-top: 75px;
 `;
 export const HeaderStyled = styled.h1`
   font-size: 40px;
@@ -41,7 +42,6 @@ export const PTag = styled.p`
 `;
 
 export const DivStyled = styled.div`
-  display: flex;
   justify-content: center;
   text-align: center;
 `;

@@ -44,3 +44,24 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+.backCard {
+  width: 125px;
+  height: 175px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Attempts {
+  width: 100%;
+  margin: 0;
+}
+
+.Attempts1 {
+  width: 50%;
+  margin: 0;
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+}
