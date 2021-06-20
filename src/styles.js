@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BodyStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-gap: 5px;
   margin: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -21,8 +21,8 @@ export const SubheadingStyled = styled.p`
 `;
 
 export const CardStyled = styled.div`
-  width: 150px;
-  height: 200px;
+  width: 125px;
+  height: 175px;
   background-color: #264653;
   border-radius: 10px;
   cursor: pointer;
@@ -32,4 +32,22 @@ export const CardStyled1 = styled.div`
   height: 200px;
   background-color: black;
   border-radius: 10px;
+`;
+
+export const PTag = styled.p`
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+`;
+
+export const DivStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
+
+export const ImgStyled = styled.img`
+  display: flex;
+  width: 125px;
+  height: 175px;
 `;

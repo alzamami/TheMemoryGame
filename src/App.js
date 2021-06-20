@@ -1,5 +1,5 @@
 import "./App.css";
-import { BodyStyled, HeaderStyled, SubheadingStyled } from "./styles";
+import { HeaderStyled, SubheadingStyled } from "./styles";
 import cards from "./cards";
 import AllCards from "./components/AllCards";
 
@@ -10,7 +10,6 @@ function App() {
       <SubheadingStyled>
         This is a game to test your ability of Memorizing
       </SubheadingStyled>
-
       <AllCards cards={cards} />
     </div>
   );

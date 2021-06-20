@@ -1,20 +1,22 @@
 import { useState } from "react";
-import cards from "../cards";
+import ReactCardFlip from "react-card-flip";
+import { DivStyled, ImgStyled } from "../styles";
 
 const CardFlip = (props) => {
-  const [isFlipped, setFlipped] = useState(false);
+  const [isFlipped, setFlipped] = useState(props.card.flipped);
   const toggle = () => {
-    //if user flipped it it cant be unflipped
-    if (!isFlipped) setFlipped(!isFlipped);
+    setFlipped(!isFlipped);
+    props.card.flipped = true;
+    setTimeout(() => {
+      props.mathcedCheck(props.card);
+    }, 500);
   };
 
-  const randomItem = cards[Math.floor(Math.random() * cards.length)];
-
   return (
-    <div className={isFlipped ? "backCard" : "frontCard"} onClick={toggle}>
-      {console.log(randomItem)}
-      <h1>{randomItem.id}</h1>
-    </div>
+    <ReactCardFlip isFlipped={props.card.flipped} flipDirection="horizontal">
+      <DivStyled className="frontCard" onClick={toggle}></DivStyled>
+      <ImgStyled src={props.card.backImage} />
+    </ReactCardFlip>
   );
 };
 
